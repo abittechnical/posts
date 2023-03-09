@@ -1,0 +1,53 @@
+---
+title: Medium Clone API
+date: 2021-12-22
+---
+
+# Medium Clone API
+
+## Dependencies
+
+- `body-parser`
+	- Node.js body parsing middleware. 
+	- Parse incoming request bodies in a middleware before your handlers, available under the `req.body` property.
+- `cors`
+	- CORS is a node.js package for providing a [Connect](http://www.senchalabs.org/connect/)/[Express](http://expressjs.com/) middleware that can be used to enable [CORS](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing) with various options.
+- `dotenv`
+	- Dotenv is a zero-dependency module that loads environment variables from a `.env` file into [`process.env`](https://nodejs.org/docs/latest/api/process.html#process_process_env). Storing configuration in the environment separate from code is based on [The Twelve-Factor App](http://12factor.net/config) methodology.
+- `ejs`
+	- Embedded Javascript templates
+- `errorhandler`
+	- Development-only error handler middleware.
+	- This middleware is only intended to be used in a development environment, as the _full error stack traces and internal details of any object passed to this module_ will be sent back to the client when an error occurs.
+- `express`
+	-  Fast, unopinionated, minimalist web framework for [node](http://nodejs.org/).******
+- `express-jwt*`
+	- This module provides Express middleware for validating JWTs ([JSON Web Tokens](https://jwt.io/)) through the [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken/) module. The decoded JWT payload is available on the request object.
+- `express-session`
+	- Session data middleware for express
+- `jsonwebtoken`
+	- An implementation of [JSON Web Tokens](https://tools.ietf.org/html/rfc7519).
+- `method-override`
+	- Lets you use HTTP verbs such as PUT or DELETE in places where the client doesn't support it.
+- `methods`
+	- HTTP verbs that Node.js core's HTTP parser supports.
+- `mongoose`
+- Mongoose is a [MongoDB](https://www.mongodb.org/) object modeling tool designed to work in an asynchronous environment. Mongoose supports both promises and callbacks.
+- `mongoose-unique-validator`
+	- mongoose-unique-validator is a plugin which adds pre-save validation for unique fields within a Mongoose schema.
+	- This makes error handling much easier, since you will get a Mongoose validation error when you attempt to violate a [unique constraint](http://mongoosejs.com/docs/api.html#schematype_SchemaType-unique), rather than an E11000 error from MongoDB.
+- `morgan`
+	- HTTP request logger middleware for node.js
+- `passport`
+	- Passport is [Express](http://expressjs.com/)-compatible authentication middleware for [Node.js](http://nodejs.org/).
+	- Passport's sole purpose is to authenticate requests, which it does through an extensible set of plugins known as _strategies_. Passport does not mount routes or assume any particular database schema, which maximizes flexibility and allows application-level decisions to be made by the developer. The API is simple: you provide Passport a request to authenticate, and Passport provides hooks for controlling what occurs when authentication succeeds or fails.
+- `passport-local`
+	- [Passport](http://passportjs.org/) strategy for authenticating with a username and password.
+	- This module lets you authenticate using a username and password in your Node.js applications. By plugging into Passport, local authentication can be easily and unobtrusively integrated into any application or framework that supports [Connect](http://www.senchalabs.org/connect/)-style middleware, including [Express](http://expressjs.com/).
+- `request` (deprecated!)
+	- Request is designed to be the simplest way possible to make http calls. It supports HTTPS and follows redirects by default.
+- `slug`
+	- Slugifies strings, even when they contain Unicode.
+	- Make strings URL-safe.
+- `underscore`
+	- Underscore.js is a utility-belt library for JavaScript that provides support for the usual functional suspects (each, map, reduce, filter...) without extending any core JavaScript objects.
